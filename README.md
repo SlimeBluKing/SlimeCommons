@@ -4,6 +4,9 @@
 
 Libs for SlimeBluKing's plugins
 
+## Resources
+- [SpigotMC Resource](https://www.spigotmc.org/resources/slimecommons.115999/)
+
 ## Using SlimeCommons
 To use this library, first add SlimeCommons-XXXX.jar to your Java build path. Then, add SlimeCommons as a dependency to your `plugin.yml` file:
 ```yaml
