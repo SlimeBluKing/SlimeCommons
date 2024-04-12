@@ -1,10 +1,6 @@
 package com.slime.slimecommons.utils;
 
-import com.slime.slimecommons.Logger;
-import com.slime.slimecommons.Logging;
-
 import java.util.concurrent.TimeUnit;
-import java.util.logging.LoggingPermission;
 
 public class TimeFormatter {
     public static String format(long milliseconds){
