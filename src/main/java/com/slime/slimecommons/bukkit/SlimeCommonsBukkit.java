@@ -1,22 +1,21 @@
-package com.slime.slimecommons;
+package com.slime.slimecommons.bukkit;
 
-import com.slime.slimecommons.listeners.*;
-import com.slime.slimecommons.utils.EconomyUtils;
+import com.slime.slimecommons.bukkit.listeners.*;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.UnknownDependencyException;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class SlimeCommons extends JavaPlugin {
-    private static SlimeCommons instance;
+public final class SlimeCommonsBukkit extends JavaPlugin {
+    private static SlimeCommonsBukkit instance;
     private Economy economy;
 
-    public SlimeCommons() {
+    public SlimeCommonsBukkit() {
         instance = this;
     }
 
-    public static SlimeCommons getInstance() {
+    public static SlimeCommonsBukkit getInstance() {
         return instance;
     }
 

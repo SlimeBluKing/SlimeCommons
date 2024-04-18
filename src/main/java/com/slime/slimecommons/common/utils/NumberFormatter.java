@@ -1,4 +1,4 @@
-package com.slime.slimecommons.utils;
+package com.slime.slimecommons.common.utils;
 
 import java.text.DecimalFormat;
 

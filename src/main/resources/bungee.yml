@@ -1,0 +1,5 @@
+name: SlimeCommons
+version: '${project.version}'
+main: com.slime.slimecommons.bungeecord.SlimeCommonsBungee
+author: SlimeBluKing
+description: 'Libs for SlimeBluKing''s plugins'

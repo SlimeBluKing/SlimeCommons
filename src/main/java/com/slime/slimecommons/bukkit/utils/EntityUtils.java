@@ -1,4 +1,4 @@
-package com.slime.slimecommons.utils;
+package com.slime.slimecommons.bukkit.utils;
 
 import org.bukkit.Location;
 

@@ -1,6 +1,6 @@
-name: SlimeCommons
+name: 'SlimeCommons'
 version: '${project.version}'
-main: com.slime.slimecommons.SlimeCommons
+main: com.slime.slimecommons.bukkit.SlimeCommonsBukkit
 api-version: '1.20'
 author: 'SlimeBluKing'
 description: 'Libs for SlimeBluKing''s plugins'

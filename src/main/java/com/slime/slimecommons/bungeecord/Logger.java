@@ -1,13 +1,13 @@
-package com.slime.slimecommons;
+package com.slime.slimecommons.bungeecord;
 
-import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
+import net.md_5.bungee.api.ProxyServer;
+import net.md_5.bungee.api.plugin.Plugin;
 
 import java.util.logging.Level;
 
 public class Logger {
     public static void log(String log) {
-        Bukkit.getLogger().info(log);
+        ProxyServer.getInstance().getLogger().info(log);
     }
 
     public static void log(Plugin plugin, String log) {
@@ -15,7 +15,7 @@ public class Logger {
     }
 
     public static void warning(String log) {
-        Bukkit.getLogger().warning(log);
+        ProxyServer.getInstance().getLogger().warning(log);
     }
 
     public static void warning(Plugin plugin, String log) {
@@ -23,7 +23,7 @@ public class Logger {
     }
 
     public static void severe(String log) {
-        Bukkit.getLogger().severe(log);
+        ProxyServer.getInstance().getLogger().severe(log);
     }
 
     public static void severe(Plugin plugin, String log) {
@@ -31,7 +31,7 @@ public class Logger {
     }
 
     public static void severe(String log, Exception e) {
-        Bukkit.getLogger().log(Level.SEVERE, log, e);
+        ProxyServer.getInstance().getLogger().log(Level.SEVERE, log, e);
     }
 
     public static void severe(Plugin plugin, String log, Exception e) {

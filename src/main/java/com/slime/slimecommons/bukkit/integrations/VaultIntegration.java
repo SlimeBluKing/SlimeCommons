@@ -1,15 +1,15 @@
-package com.slime.slimecommons.integrations;
+package com.slime.slimecommons.bukkit.integrations;
 
-import com.slime.slimecommons.SlimeCommons;
+import com.slime.slimecommons.bukkit.SlimeCommonsBukkit;
 import org.bukkit.entity.Player;
 
 public class VaultIntegration {
     public static void giveMoney(Player player, double amount) {
-        SlimeCommons.getInstance().getEconomy().depositPlayer(player, amount);
+        SlimeCommonsBukkit.getInstance().getEconomy().depositPlayer(player, amount);
     }
 
     public static void takeMoney(Player player, double amount) {
-        SlimeCommons.getInstance().getEconomy().withdrawPlayer(player, amount);
+        SlimeCommonsBukkit.getInstance().getEconomy().withdrawPlayer(player, amount);
     }
 
     public static void setMoney(Player player, double amount) {
@@ -36,6 +36,6 @@ public class VaultIntegration {
     }
 
     public static double getBalance(Player player) {
-        return SlimeCommons.getInstance().getEconomy().getBalance(player);
+        return SlimeCommonsBukkit.getInstance().getEconomy().getBalance(player);
     }
 }

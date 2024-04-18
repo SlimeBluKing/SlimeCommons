@@ -34,4 +34,5 @@ You can also add SlimeCommons as a Maven dependency:
 ```
 <br>
 
-> P.S. I will complete the readme when I decide to document everything
+> P.S. I will complete the readme when I decide to document everything<br /><br />
+> The compatibility with BungeeCord is in beta and to be reviewed.

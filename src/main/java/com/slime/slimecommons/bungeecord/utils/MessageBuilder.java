@@ -1,9 +1,9 @@
-package com.slime.slimecommons.utils;
+package com.slime.slimecommons.bungeecord.utils;
 
-import com.slime.slimecommons.Logger;
-import me.clip.placeholderapi.PlaceholderAPI;
-import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
+import com.slime.slimecommons.bungeecord.Logger;
+import net.md_5.bungee.api.ChatColor;
+import net.md_5.bungee.api.chat.TextComponent;
+import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,32 +12,28 @@ import java.util.Map;
 public class MessageBuilder {
     private final List<String> messages;
 
-    public MessageBuilder(String message){
-        this.messages = new ArrayList<>();
-        this.messages.add(message);
+    public MessageBuilder(String message) {
+        messages = new ArrayList<>();
+        messages.add(message);
     }
 
-    public MessageBuilder(List<String> message){
-        this.messages = message;
+    public MessageBuilder(List<String> message) {
+        messages = message;
     }
 
     public void replacePlaceholder(String placeholder, Object value) {
         messages.replaceAll(message -> message.replace(placeholder, value.toString()));
     }
 
-    public void replacePlaceholders(Map<String, Object> values){
+    public void replacePlaceholders(Map<String, Object> values) {
         for(Map.Entry<String, Object> entry : values.entrySet()){
             replacePlaceholder(entry.getKey(), entry.getValue());
         }
     }
 
-    public void parsePapi(Player player) {
-        messages.replaceAll(message -> PlaceholderAPI.setPlaceholders(player, message));
-    }
-
-    public void send(Player player) {
+    public void send(ProxiedPlayer player) {
         for(String message : messages) {
-            player.sendMessage(Colorize(message));
+            player.sendMessage(new TextComponent(Colorize(message)));
         }
     }
 

@@ -1,4 +1,4 @@
-package com.slime.slimecommons.utils;
+package com.slime.slimecommons.bukkit.utils;
 
 import com.sk89q.worldedit.bukkit.BukkitAdapter;
 import com.sk89q.worldguard.WorldGuard;

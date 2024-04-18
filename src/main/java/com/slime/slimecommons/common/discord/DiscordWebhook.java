@@ -1,4 +1,4 @@
-package com.slime.slimecommons.objects;
+package com.slime.slimecommons.common.discord;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.awt.Color;

@@ -1,4 +1,4 @@
-package com.slime.slimecommons.managers;
+package com.slime.slimecommons.bukkit.managers;
 
 import org.bukkit.Color;
 import org.bukkit.Location;
@@ -170,13 +170,7 @@ public class YamlManager {
         if(value == null){
             value = defaultValue;
 
-            yaml.set(path, defaultValue);
-
-            try{
-                saveYaml();
-            } catch (IOException e){
-                instance.getLogger().severe(e.toString());
-            }
+            setValue(path, defaultValue);
         }
         return value;
     }

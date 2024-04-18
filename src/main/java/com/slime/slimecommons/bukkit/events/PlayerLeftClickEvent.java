@@ -1,4 +1,4 @@
-package com.slime.slimecommons.events;
+package com.slime.slimecommons.bukkit.events;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
