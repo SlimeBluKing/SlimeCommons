@@ -1,6 +1,7 @@
 package com.slime.slimecommons.bukkit.utils;
 
 import com.slime.slimecommons.bukkit.Logger;
+import com.slime.slimecommons.bukkit.integrations.PlaceholderAPIIntegration;
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -32,7 +33,7 @@ public class MessageBuilder {
     }
 
     public void parsePapi(Player player) {
-        messages.replaceAll(message -> PlaceholderAPI.setPlaceholders(player, message));
+        messages.replaceAll(message -> PlaceholderAPIIntegration.parsePapi(player, message));
     }
 
     public void send(Player player) {
@@ -47,7 +48,7 @@ public class MessageBuilder {
         }
     }
 
-    public static String Colorize(String message) {
-        return ChatColor.translateAlternateColorCodes('&', message);
+    public static String Colorize(String str) {
+        return ChatColor.translateAlternateColorCodes('&', str);
     }
 }
