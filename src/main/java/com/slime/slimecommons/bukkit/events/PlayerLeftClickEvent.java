@@ -1,11 +1,13 @@
 package com.slime.slimecommons.bukkit.events;
 
+import lombok.Getter;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
+@Getter
 public class PlayerLeftClickEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
 
@@ -24,12 +26,5 @@ public class PlayerLeftClickEvent extends Event {
 
     public static HandlerList getHandlerList(){
         return handlers;
-    }
-
-    public ItemStack getItem(){
-        return item;
-    }
-    public Player getPlayer() {
-        return player;
     }
 }
